@@ -1,0 +1,188 @@
+; DASM Syntax Definition
+; --------------------------------
+; Author: Paul Maskelyne (Muttley)
+; 
+; Version 1
+;
+; Revision History:
+;   v1 [2012-05-06]: Initial Version (DASM 2.20.11)
+;
+
+C=1
+
+[Syntax]
+BracketChars = (){}[]
+CharEnd =
+CharEsc =
+CharStart =
+CommentEnd = 
+CommentEndAlt = 
+CommentStart = 
+CommentStartAlt = 
+HexPrefix = $
+IgnoreCase = Yes
+Namespace1 = 6
+OperatorChars = +-<>=&~*/%!^|?,#
+PreprocStart = 
+SingleComment = ;
+SingleCommentAlt =
+SingleCommentCol =
+SingleCommentColAlt =
+StringAlt =
+StringEnd = "
+StringEsc =
+StringStart = "
+SyntaxEnd =
+SyntaxStart =
+
+;--------------------------
+; DASM pre-processor stuff
+;--------------------------
+;
+[Keywords 1]
+.force
+align
+byte
+dc.b
+dc.l
+dc.w
+ds.b
+ds.l
+ds.w
+dv.b
+dv.l
+dv.w
+echo
+eif
+else
+endif
+endm
+eqm
+equ
+err
+hex
+if
+ifconst
+ifnconst
+incbin
+incdir
+include
+list
+long
+mac
+mexit
+off
+on
+org
+processor
+rend
+repeat
+repend
+rorg
+seg
+seg.u
+set
+subroutine
+word
+
+;------------------
+; Standard opcodes
+;------------------
+;
+[Keywords 2]
+adc
+and
+asl
+bcc
+bcs
+beq
+bit
+bmi
+bne
+bpl
+brk
+bvc
+bvs
+clc
+cld
+cli
+clv
+cmp
+cpx
+cpy
+dec
+dex
+dey
+eor
+inc
+inx
+iny
+jmp
+jsr
+lda
+ldx
+ldy
+lsr
+nop
+ora
+pha
+php
+pla
+plp
+rol
+ror
+rti
+rts
+sbc
+sec
+sed
+sei
+sta
+stx
+sty
+tax
+tay
+tsx
+txa
+txs
+tya
+
+;------------------------------
+; Undocumented/illegal opcodes
+;------------------------------
+;
+[Keywords 3]
+alr
+anc
+arr
+aso
+axa
+axs
+dcm
+hlt
+ins
+las
+lax
+lse
+oal
+oal
+rla
+rra
+sax
+sax
+say
+skb
+skw
+tas
+xaa
+xaa
+
+;----------------
+; 6502 registers
+;----------------
+;
+[Keywords 4]
+a
+x
+y
+

@@ -1,0 +1,323 @@
+; Kick Assembler Syntax Definition
+; --------------------------------
+; Author: Paul Maskelyne (Muttley)
+; 
+; Version 2
+;
+; Revision History:
+;   v1 [2012-05-04]: Initial Version (Kick Assembler v3.22)
+;   v2 [2012-05-06]: Tidy up
+;
+
+C=1
+
+[Syntax]
+BracketChars = (){}[]
+CharEnd = '
+CharEsc = 
+CharStart = '
+CommentEnd = */
+CommentEndAlt =
+CommentStart = /*
+CommentStartAlt = 
+HexPrefix = $
+IgnoreCase = Yes
+Namespace1 = 6
+OperatorChars = +-<>=&~*/%!^|?,#
+PreprocStart = 
+SingleComment = //
+SingleCommentAlt = 
+SingleCommentCol = 
+SingleCommentColAlt =
+SingleCommentEsc = 
+StringAlt = 
+StringEnd = "
+StringEsc = 
+StringStart = "
+SyntaxEnd =
+SyntaxStart =
+
+;------------------------------------
+; Kick Assembler pre-processor stuff
+;------------------------------------
+;
+[Keywords 1]
+.align
+.assert
+.asserterror
+.byte
+.const
+.define
+.dword
+.enum
+.error
+.eval
+.filenamespace
+.fill
+.for
+.function
+.if
+.import
+.importonce
+.label
+.macro
+.namespace
+.pc
+.print
+.printnow
+.pseudocommand
+.pseudopc
+.return
+.struct
+.text
+.var
+.word
+
+;-----------------------------------------------------------
+; Kick Assembler commands, built in macros, constants, etc.
+;-----------------------------------------------------------
+;
+[Keywords 2]
+:BasicUpstart
+:BasicUpstart2
+ABS
+abs
+ABSX
+ABSY
+acos
+add
+asin
+AT_ABSOLUTE
+AT_ABSOLUTEX
+AT_ABSOLUTEY
+AT_IMMEDIATE
+AT_INDIRECT
+AT_IZEROPAGEX
+AT_IZEROPAGEY
+AT_NONE
+atan
+atan2
+Author
+BackgroundColor
+BF_BITMAP_SINGLECOLOR
+BF_C64FILE
+BF_FLI
+BF_KOALA
+binary
+Bitmap
+BLACK
+BLUE
+BROWN
+c64
+cbrt
+ceil
+cmdLineVars
+ColorRam
+containsKey
+Copyright
+cos
+cosh
+createFile
+CYAN
+DARK_GRAY
+DARK_GREY
+E
+else
+exp
+expm1
+Flags
+floor
+get
+getBackgroundColor
+getBitmap
+getBitmapSize
+getColorRam
+getColorRamSize
+getData
+getFieldNames
+getMulticolorByte
+getNoOfFields
+getPixel
+getScreenRam
+getScreenRamSize
+getSinglecolorByte
+getStructName
+getType
+getValue
+getX
+getY
+getZ
+GRAY
+GREEN
+GREY
+Hashtable
+Header
+Height
+hypot
+IEEEremainder
+IMM
+IND
+Init
+IZPX
+IZPY
+keys
+LIGHT_BLUE
+LIGHT_GRAY
+LIGHT_GREEN
+LIGHT_GREY
+LIGHT_RED
+LoadBinary
+LoadSid
+location
+log
+log10
+log1p
+Matrix
+max
+min
+mod
+MoveMatrix
+Name
+ORANGE
+Pagelength
+PerspectiveMatrix
+PI
+Play
+pow
+PURPLE
+put
+random
+RED
+REL
+remove
+reverse
+RotationMatrix
+round
+ScaleMatrix
+ScreenRam
+set
+shuffle
+signum
+sin
+sinh
+size
+Songs
+sort
+source
+Speed
+sqrt
+Startpage
+startSong
+tan
+tanh
+text
+toBinaryString
+toDegrees
+toHexString
+toIntString
+toOctalString
+toRadians
+Vector
+Version
+WHITE
+Width
+writeln
+X
+YELLOW
+ZP
+ZPX
+ZPY
+
+;---------------------------------------------------------------
+; All supported opcodes, including undocumented/illegal and DTV
+;---------------------------------------------------------------
+;
+[Keywords 3]
+adc
+ahx
+alr
+anc
+anc2
+and
+arr
+asl
+axs
+bcc
+bcs
+beq
+bit
+bmi
+bne
+bpl
+bra
+brk
+bvc
+bvs
+clc
+cld
+cli
+clv
+cmp
+cpx
+cpy
+dcp
+dec
+dex
+dey
+eor
+inc
+inx
+iny
+isc
+jmp
+jsr
+las
+lax
+lda
+ldx
+ldy
+lsr
+nop
+ora
+pha
+php
+pla
+plp
+rla
+rol
+ror
+rra
+rti
+rts
+sac
+sax
+sbc
+sbc2
+sec
+sed
+sei
+shx
+shy
+sir
+slo
+sre
+sta
+stx
+sty
+tas
+tax
+tay
+tsx
+txa
+txs
+tya
+xaa
+
+;----------------
+; 6502 registers
+;----------------
+;
+[Keywords 4]
+a
+x
+y
