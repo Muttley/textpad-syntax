@@ -28,7 +28,7 @@ the registers as follows:
 	Column: 2
 
 You should now be able to double-click on an error in the Tool Output window
-and Textpad will open the relevant source file at the line and column where
+and TextPad will open the relevant source file at the line and column where
 the error was reported.
 
 [1]: https://www.textpad.com

@@ -26,7 +26,7 @@ as follows:
 	Line: 2
 
 You should now be able double click on an error in the Tool Output window and
-Textpad will open the relevant source file at that line and column where the
+TextPad will open the relevant source file at that line and column where the
 error was reported.
 
 [1]: https://www.textpad.com
